@@ -7,7 +7,7 @@ var form = document.getElementById('xIsWhatPercentOfY');
 form.addEventListener('submit', function(event) {
 
   if (!numField1.value || !numField2.value) {
-    alert("Please  enter some values in the fields!")
+    alert("Please  enter some values in the fields!");
   } else {
     var x = parseFloat(numField1.value);
     var y = parseFloat(numField2.value);
@@ -18,4 +18,4 @@ form.addEventListener('submit', function(event) {
     resultField.innerText = "Answer: " + percent + "%";
     event.preventDefault();
   }
-})
+});
